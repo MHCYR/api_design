@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
     "sourceMap": true,
+    "noImplicitAny": false,
     "outDir": "dist",
     "lib": ["esnext"],
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "esModuleInterop": true
   }
 }
