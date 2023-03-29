@@ -11,7 +11,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // creates an object from the request url
 
 app.use((req, res, next) => {
-  req.secret = "secret nodemon"; // this allows us to access the secret variable on all requests
   next();
 });
 
