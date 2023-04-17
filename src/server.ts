@@ -25,4 +25,8 @@ app.use("/api", protect, router);
 app.post("/user", createNewUser);
 app.post("/signin", signin);
 
+app.use((err, req, res, next) => {
+  console.log(err);
+  res.status(500).json({ error: "Ooops" });
+});
 export default app;
